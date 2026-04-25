@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artermision — A premium wellness hospitality destination in Aidipsos, Evia, Greece. Wellness in Every Stay.">
+    <title>Artermision — Wellness in Every Stay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVIGATION
+    ============================================================ -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <button class="nav__toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+            <a href="#home" class="nav__logo">
+                <img src="logo_without_back.png" alt="Artermision" class="nav__logo-img">
+            </a>
+            <ul class="nav__links">
+                <li><a href="#rooms" class="nav__link">Rooms &amp; Suites</a></li>
+                <li><a href="#spa" class="nav__link">Spa</a></li>
+                <li><a href="#pool" class="nav__link">Pool</a></li>
+                <li><a href="#wellness" class="nav__link">Wellness</a></li>
+                <li><a href="#experiences" class="nav__link">Retreat</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav__cta">Reserve</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-mobile" id="navMobile" aria-hidden="true">
+        <button class="nav-mobile__close" id="navClose" aria-label="Close navigation">&#10005;</button>
+        <ul>
+            <li><a href="#rooms">Rooms &amp; Suites</a></li>
+            <li><a href="#spa">Spa</a></li>
+            <li><a href="#pool">Pool</a></li>
+            <li><a href="#wellness">Wellness</a></li>
+            <li><a href="#experiences">Retreat</a></li>
+            <li><a href="#contact">Reserve</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-mobile__footer">
+            <span>Evia, Greece</span>
+            <span>+30 2226 022251</span>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="home">
+        <div class="hero__media">
+            <div class="hero__photo-placeholder" aria-hidden="true"></div>
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <span class="hero__location">Aidipsos · Evia · Greece</span>
+            <h1 class="hero__title">Wellness in<br><em>Every Stay</em></h1>
+            <p class="hero__tagline">A premium retreat designed for rest,<br>renewal and elevated living.</p>
+        </div>
+        <div class="hero__scroll">
+            <div class="hero__scroll-line"></div>
+            <span class="hero__scroll-label">Scroll</span>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         BRAND STATEMENT
+    ============================================================ -->
+    <section class="statement">
+        <div class="container">
+            <div class="statement__inner reveal">
+                <div class="statement__label">Our Philosophy</div>
+                <h2 class="statement__title">
+                    Restoration is not a luxury.<br>
+                    <em>It is the destination.</em>
+                </h2>
+                <div class="statement__philosophy">
+                    <p>At the heart of our philosophy lies a simple belief: true hospitality is not only about where you stay, but how you feel while you are there. We believe in creating a place where comfort, wellbeing, and meaningful experiences come together in perfect balance.</p>
+                    <p>Rooted in the natural beauty and restorative spirit of our surroundings, our hotel is designed as a sanctuary of calm — a place where guests are invited to slow down, reconnect, and experience a more conscious way of living. From the soothing presence of thermal water to the quiet elegance of our spaces, every detail is thoughtfully curated to inspire rest, renewal, and a sense of effortless wellbeing.</p>
+                    <p>More than a destination, we offer an experience shaped by warmth, authenticity, and refined simplicity — where every stay becomes an invitation to restore, rebalance, and truly unwind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SUITES & RESIDENCES
+    ============================================================ -->
+    <section class="suites" id="rooms">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Accommodation</span>
+                <h2 class="section-title">Rooms &amp; Suites</h2>
+                <p class="section-desc">Every room at Artermision is a sanctuary — designed around comfort,
+                natural light and the quiet luxury of genuine rest.</p>
+            </div>
+            <div class="suites__grid">
+
+                <!-- ROW 1 -->
+
+                <!-- SUITES -->
+                <article class="suite-card reveal" data-modal="suites" role="button" tabindex="0" aria-label="View Suites details">
+                    <div class="suite-card__image">
+                        <img src="Suite_Bed.jpeg" alt="Artermision Suite" loading="lazy">
+                        <div class="suite-card__overlay">
+                            <span class="btn btn--light-sm">View Suite</span>
+                        </div>
+                    </div>
+                    <div class="suite-card__body">
+                        <span class="suite-card__type">Premium Accommodation</span>
+                        <h3 class="suite-card__name">Suites</h3>
+                        <p class="suite-card__desc">Spacious, elegantly appointed suites with premium bedding, private balconies and curated wellness amenities. Designed for a complete experience of elevated living.</p>
+                        <div class="suite-card__features">
+                            <span>King Bed</span>
+                            <span>Private Balcony</span>
+                            <span>Spa Amenities</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- DOUBLE ROOMS -->
+                <article class="suite-card reveal" data-modal="double" role="button" tabindex="0" aria-label="View Double Rooms details">
+                    <div class="suite-card__image suite-card__image--placeholder">
+                        <div class="suite-card__placeholder-label">Photo coming soon</div>
+                        <div class="suite-card__overlay">
+                            <span class="btn btn--light-sm">View Room</span>
+                        </div>
+                    </div>
+                    <div class="suite-card__body">
+                        <span class="suite-card__type">Classic Accommodation</span>
+                        <h3 class="suite-card__name">Double Rooms</h3>
+                        <p class="suite-card__desc">Refined double rooms with a calm, considered aesthetic. Soft natural light, premium bedding and elegant finishes make every stay a quiet retreat.</p>
+                        <div class="suite-card__features">
+                            <span>Double Bed</span>
+                            <span>City or Sea View</span>
+                            <span>En-suite Bath</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- SINGLE ROOMS -->
+                <article class="suite-card reveal" data-modal="single" role="button" tabindex="0" aria-label="View Single Rooms details">
+                    <div class="suite-card__image suite-card__image--placeholder">
+                        <div class="suite-card__placeholder-label">Photo coming soon</div>
+                        <div class="suite-card__overlay">
+                            <span class="btn btn--light-sm">View Room</span>
+                        </div>
+                    </div>
+                    <div class="suite-card__body">
+                        <span class="suite-card__type">Solo Retreat</span>
+                        <h3 class="suite-card__name">Single Rooms</h3>
+                        <p class="suite-card__desc">Intimate, beautifully designed single rooms for the solo traveller seeking quality rest. Every detail considered, every comfort provided.</p>
+                        <div class="suite-card__features">
+                            <span>Single Bed</span>
+                            <span>Work Desk</span>
+                            <span>En-suite Bath</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ROW 2 -->
+
+                <!-- TRIPLE ROOMS -->
+                <article class="suite-card reveal" data-modal="triple" role="button" tabindex="0" aria-label="View Triple Rooms details">
+                    <div class="suite-card__image suite-card__image--placeholder">
+                        <div class="suite-card__placeholder-label">Photo coming soon</div>
+                        <div class="suite-card__overlay">
+                            <span class="btn btn--light-sm">View Room</span>
+                        </div>
+                    </div>
+                    <div class="suite-card__body">
+                        <span class="suite-card__type">Shared Accommodation</span>
+                        <h3 class="suite-card__name">Triple Rooms</h3>
+                        <p class="suite-card__desc">Generously sized triple rooms designed for small groups or families. Three beds, considered layout and the same refined comfort throughout.</p>
+                        <div class="suite-card__features">
+                            <span>3 Beds</span>
+                            <span>Spacious Layout</span>
+                            <span>En-suite Bath</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- FAMILY ROOMS -->
+                <article class="suite-card reveal" data-modal="family" role="button" tabindex="0" aria-label="View Family Rooms details">
+                    <div class="suite-card__image suite-card__image--placeholder">
+                        <div class="suite-card__placeholder-label">Photo coming soon</div>
+                        <div class="suite-card__overlay">
+                            <span class="btn btn--light-sm">View Room</span>
+                        </div>
+                    </div>
+                    <div class="suite-card__body">
+                        <span class="suite-card__type">Family Accommodation</span>
+                        <h3 class="suite-card__name">Family Rooms</h3>
+                        <p class="suite-card__desc">Generous, warmly designed rooms that accommodate the whole family in comfort. Thoughtful layout, natural materials and everything needed for a restorative family stay.</p>
+                        <div class="suite-card__features">
+                            <span>Multiple Beds</span>
+                            <span>Spacious Layout</span>
+                            <span>Garden View</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ACCESSIBLE ROOMS -->
+                <article class="suite-card reveal" data-modal="accessible" role="button" tabindex="0" aria-label="View Accessible Rooms details">
+                    <div class="suite-card__image">
+                        <img src="Accessible.jpeg" alt="Accessible Room" loading="lazy">
+                        <div class="suite-card__overlay">
+                            <span class="btn btn--light-sm">View Room</span>
+                        </div>
+                    </div>
+                    <div class="suite-card__body">
+                        <span class="suite-card__type">Accessible Accommodation</span>
+                        <h3 class="suite-card__name">Accessible Rooms</h3>
+                        <p class="suite-card__desc">Fully accessible rooms designed with care, dignity and comfort. Every element is thoughtfully adapted to ensure an equally elevated stay for all guests.</p>
+                        <div class="suite-card__features">
+                            <span>Accessible Design</span>
+                            <span>Roll-in Shower</span>
+                            <span>Ground Floor</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SPA & WELLNESS
+    ============================================================ -->
+    <section class="spa-section" id="spa">
+        <div class="spa-section__media">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=80" alt="Artermision Spa — deep relaxation and restoration" loading="lazy">
+        </div>
+        <div class="spa-section__overlay"></div>
+        <div class="spa-section__content reveal">
+            <span class="section-label section-label--light">Artermision Spa</span>
+            <h2 class="section-title section-title--light">Thermal Spa<br><em>Treatments</em></h2>
+            <p class="spa-section__text">
+                Discover a restorative wellness experience designed to support recovery, rejuvenation, and long-term wellbeing. Our carefully curated thermal spa treatments combine the healing benefits of natural thermal water with personalised wellness guidance to help restore balance, vitality, and inner harmony.
+            </p>
+            <p class="spa-section__text">
+                From rejuvenating anti-ageing therapies and aesthetic treatments to tailored nutrition guidance, pool therapy, and specialised treatments for the body and face, each experience is thoughtfully designed to meet your individual needs and support a more holistic approach to health.
+            </p>
+            <p class="spa-section__text">
+                Reconnect with your body, restore from within, and experience the therapeutic benefits of treatments designed to promote relaxation, recovery, and overall wellbeing.
+            </p>
+            <ul class="spa-section__list">
+                <li><button class="spa-list__btn" data-spa-modal="massage">Therapeutic Massage</button></li>
+                <li><button class="spa-list__btn" data-spa-modal="hydro">Hydrotherapy</button></li>
+                <li><button class="spa-list__btn" data-spa-modal="rasul">Rasul</button></li>
+                <li><button class="spa-list__btn" data-spa-modal="salt">Salt Therapy</button></li>
+                <li><button class="spa-list__btn" data-spa-modal="headspa">Head Spa</button></li>
+                <li><button class="spa-list__btn" data-spa-modal="presotherapy">Presotherapy</button></li>
+                <li><button class="spa-list__btn" data-spa-modal="facial">Holistic Facial Treatment</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SPA TREATMENT MODALS
+    ============================================================ -->
+
+    <div class="spa-modal" id="spa-modal-massage" role="dialog" aria-modal="true" aria-labelledby="spa-modal-massage-title" aria-hidden="true">
+        <div class="spa-modal__backdrop"></div>
+        <div class="spa-modal__panel">
+            <button class="spa-modal__close" aria-label="Close">&times;</button>
+            <img class="spa-modal__image" src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80" alt="Therapeutic Massage" loading="lazy">
+            <div class="spa-modal__body">
+                <span class="spa-modal__label">Artermision Spa</span>
+                <h2 class="spa-modal__title" id="spa-modal-massage-title">Therapeutic Massage</h2>
+                <p class="spa-modal__desc">A deeply restorative treatment combining skilled therapeutic pressure, relaxation techniques and rhythmic movement. Tailored to each guest's individual needs — whether you seek relief from muscle tension, improved circulation or simply a profound state of calm. Available as a full-body or targeted session.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="spa-modal" id="spa-modal-hydro" role="dialog" aria-modal="true" aria-labelledby="spa-modal-hydro-title" aria-hidden="true">
+        <div class="spa-modal__backdrop"></div>
+        <div class="spa-modal__panel">
+            <button class="spa-modal__close" aria-label="Close">&times;</button>
+            <img class="spa-modal__image" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Hydrotherapy" loading="lazy">
+            <div class="spa-modal__body">
+                <span class="spa-modal__label">Artermision Spa</span>
+                <h2 class="spa-modal__title" id="spa-modal-hydro-title">Hydrotherapy</h2>
+                <p class="spa-modal__desc">The therapeutic use of water in varied temperatures and pressures to stimulate circulation, ease joint and muscle discomfort and support the body's natural healing response. Our hydrotherapy treatments draw on the unique mineral richness of Edipsos' thermal waters for amplified restorative benefit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="spa-modal" id="spa-modal-rasul" role="dialog" aria-modal="true" aria-labelledby="spa-modal-rasul-title" aria-hidden="true">
+        <div class="spa-modal__backdrop"></div>
+        <div class="spa-modal__panel">
+            <button class="spa-modal__close" aria-label="Close">&times;</button>
+            <img class="spa-modal__image" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" alt="Rasul" loading="lazy">
+            <div class="spa-modal__body">
+                <span class="spa-modal__label">Artermision Spa</span>
+                <h2 class="spa-modal__title" id="spa-modal-rasul-title">Rasul</h2>
+                <p class="spa-modal__desc">A traditional Middle Eastern ritual cleansing ceremony. Aromatic mineral muds are applied to the body, followed by a gentle steam session and a refreshing shower. Deeply purifying, intensely relaxing and profoundly restorative for the skin. An experience that cleanses, renews and stills the mind.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="spa-modal" id="spa-modal-salt" role="dialog" aria-modal="true" aria-labelledby="spa-modal-salt-title" aria-hidden="true">
+        <div class="spa-modal__backdrop"></div>
+        <div class="spa-modal__panel">
+            <button class="spa-modal__close" aria-label="Close">&times;</button>
+            <img class="spa-modal__image" src="https://images.unsplash.com/photo-1535827841776-24afc1e255ac?auto=format&fit=crop&w=800&q=80" alt="Salt Therapy" loading="lazy">
+            <div class="spa-modal__body">
+                <span class="spa-modal__label">Artermision Spa</span>
+                <h2 class="spa-modal__title" id="spa-modal-salt-title">Salt Therapy</h2>
+                <p class="spa-modal__desc">Inspired by the natural salt caves of Eastern Europe, our salt therapy room uses micro-particles of pharmaceutical-grade salt to support respiratory wellness, skin clarity and deep relaxation. A peaceful, breath-focused experience that cleanses the airways and calms the nervous system from within.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="spa-modal" id="spa-modal-headspa" role="dialog" aria-modal="true" aria-labelledby="spa-modal-headspa-title" aria-hidden="true">
+        <div class="spa-modal__backdrop"></div>
+        <div class="spa-modal__panel">
+            <button class="spa-modal__close" aria-label="Close">&times;</button>
+            <img class="spa-modal__image" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Head Spa" loading="lazy">
+            <div class="spa-modal__body">
+                <span class="spa-modal__label">Artermision Spa</span>
+                <h2 class="spa-modal__title" id="spa-modal-headspa-title">Head Spa</h2>
+                <p class="spa-modal__desc">A deeply restorative scalp and head ritual combining warm oil application, targeted acupressure and gentle massage techniques. Designed to release the tension held in the scalp, neck and shoulders, restore mental clarity and guide you into a state of profound, unhurried calm.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="spa-modal" id="spa-modal-presotherapy" role="dialog" aria-modal="true" aria-labelledby="spa-modal-presotherapy-title" aria-hidden="true">
+        <div class="spa-modal__backdrop"></div>
+        <div class="spa-modal__panel">
+            <button class="spa-modal__close" aria-label="Close">&times;</button>
+            <img class="spa-modal__image" src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80" alt="Presotherapy" loading="lazy">
+            <div class="spa-modal__body">
+                <span class="spa-modal__label">Artermision Spa</span>
+                <h2 class="spa-modal__title" id="spa-modal-presotherapy-title">Presotherapy</h2>
+                <p class="spa-modal__desc">A specialised compression therapy that uses controlled air pressure to stimulate lymphatic drainage, improve circulation and reduce fluid retention. Delivered through a comfortable, full-length garment that gently massages the body in rhythmic waves — leaving you feeling lighter, refreshed and deeply restored.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="spa-modal" id="spa-modal-facial" role="dialog" aria-modal="true" aria-labelledby="spa-modal-facial-title" aria-hidden="true">
+        <div class="spa-modal__backdrop"></div>
+        <div class="spa-modal__panel">
+            <button class="spa-modal__close" aria-label="Close">&times;</button>
+            <img class="spa-modal__image" src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80" alt="Holistic Facial Treatment" loading="lazy">
+            <div class="spa-modal__body">
+                <span class="spa-modal__label">Artermision Spa</span>
+                <h2 class="spa-modal__title" id="spa-modal-facial-title">Holistic Facial Treatment</h2>
+                <p class="spa-modal__desc">A luxurious facial ritual that treats the skin and the senses in equal measure. Using premium botanical formulations, gentle massage and targeted techniques, this treatment deeply cleanses, hydrates and revitalises the complexion — leaving the skin luminous, balanced and profoundly refreshed. Tailored to your skin type and condition.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         POOL
+    ============================================================ -->
+    <section class="split-section" id="pool">
+        <div class="split-section__media reveal-left">
+            <img src="https://images.unsplash.com/photo-1544984243-ec57ea16fe25?auto=format&fit=crop&w=1000&q=80" alt="Artermision pool — resort calm and premium leisure" loading="lazy">
+        </div>
+        <div class="split-section__content reveal-right">
+            <span class="section-label">The Pool</span>
+            <h2 class="section-title">Thermal Spa Pool</h2>
+            <p class="split-section__text">
+                Immerse yourself in the healing waters of Edipsos, naturally enriched with renowned thermal properties and maintained at a soothing temperature of 32–33°C. Designed for deep relaxation and wellbeing, our thermal spa pool offers a restorative experience that combines comfort, serenity and the timeless therapeutic benefits of Edipsos' natural springs.
+            </p>
+            <p class="split-section__text">
+                <strong>Benefits:</strong> Promotes deep relaxation, supports circulation, relieves muscle tension, eases joint discomfort, reduces stress and enhances overall wellbeing through the natural therapeutic properties of Edipsos thermal water.
+            </p>
+            <div class="split-section__stats">
+                <div class="stat">
+                    <span class="stat__value">25m</span>
+                    <span class="stat__label">Lap Pool</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__value">32–33°</span>
+                    <span class="stat__label">Heated Year-Round</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FITNESS & WELLNESS
+    ============================================================ -->
+    <section class="split-section split-section--reverse" id="wellness">
+        <div class="split-section__media reveal-right">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="Artermision Wellness Studio — mindful movement" loading="lazy">
+        </div>
+        <div class="split-section__content reveal-left">
+            <span class="section-label">Movement &amp; Wellbeing</span>
+            <h2 class="section-title">Fitness as<br><em>Part of Wellness</em></h2>
+            <p class="split-section__text">
+                Our wellness studio and fitness space are curated for mindful movement. Premium equipment, soft lighting and a calm atmosphere designed to make movement feel like a ritual, not a routine.
+            </p>
+            <ul class="split-section__list">
+                <li>Wellness Gym</li>
+                <li>Yoga &amp; Pilates Studio</li>
+                <li>Personal Training</li>
+                <li>Guided Meditation</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCES / LIFESTYLE
+    ============================================================ -->
+    <section class="experiences" id="experiences">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">The Retreat</span>
+                <h2 class="section-title">Rest, Ritual<br><em>&amp; Elevated Simplicity</em></h2>
+                <p class="section-desc">Every moment at Artermision is an invitation to slow down, to be present and to restore.</p>
+                <div class="retreat-intro">
+                    <p><strong>Create your own retreat and let us bring it to life.</strong></p>
+                    <p>Whether you are a Pilates instructor, yoga teacher, wellness practitioner, or simply envision hosting your own bespoke retreat, we invite you to create it with us. Our space offers the ideal setting to design and host personalised retreat experiences tailored to your vision — from mindful movement and wellness workshops to holistic rituals, recovery practices, and immersive wellbeing experiences.</p>
+                    <p>Set in a serene coastal destination enriched by the restorative benefits of natural thermal water, our hotel provides the perfect environment for meaningful gatherings designed around movement, rest, and reconnection. With elegant accommodation, wellness facilities, and a setting created to inspire calm and renewal, we offer the foundation for a retreat experience that feels effortless, elevated, and entirely your own.</p>
+                    <p>Bring your concept, your community, and your vision — and let us help you transform it into a thoughtfully curated retreat experience.</p>
+                </div>
+            </div>
+            <div class="experiences__grid">
+                <div class="exp-item exp-item--tall reveal">
+                    <img src="Suite_Bed.jpeg" alt="Artermision accommodation" loading="lazy">
+                    <div class="exp-item__caption">Accommodation</div>
+                </div>
+                <div class="exp-item reveal">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=700&q=80" alt="Spa and restoration" loading="lazy">
+                    <div class="exp-item__caption">Spa &amp; Restoration</div>
+                </div>
+                <div class="exp-item reveal">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80" alt="Wellness moments" loading="lazy">
+                    <div class="exp-item__caption">Wellness Moments</div>
+                </div>
+            </div>
+            <div class="retreat-intro retreat-intro--below reveal">
+                <p>Escape the pace of everyday life and reconnect with yourself through a refined wellness retreat combining mindful movement with the restorative power of natural thermal water. Our Pilates, Yoga &amp; Wellness Retreats are thoughtfully curated to restore balance in body, mind, and spirit — set in a serene coastal setting that invites you to slow down and live more consciously.</p>
+                <p>Begin your mornings with Pilates or sunrise yoga, soothe body and mind in thermal waters, and restore inner balance through breathwork, guided relaxation, and holistic wellness rituals — each element designed to leave you feeling grounded, renewed, and deeply restored.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">Contact <em>Us</em></h2>
+                <p class="section-desc">We would love to hear from you. Send us a message and we will get back to you shortly.</p>
+            </div>
+            <div class="contact-section__layout">
+                <div class="contact-section__info reveal">
+                    <div class="contact-info-item">
+                        <span class="contact-info-item__label">Address</span>
+                        <span class="contact-info-item__value">Filellinon 5, Loutra Edipsou<br>34300, Greece</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-item__label">Phone</span>
+                        <a href="tel:+302226022251" class="contact-info-item__value">+30 2226 022251</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-item__label">Email</span>
+                        <a href="mailto:info@hotelartemision.gr" class="contact-info-item__value">info@hotelartemision.gr</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-item__label">Follow</span>
+                        <a href="https://www.instagram.com/artemision_hotelspa/" target="_blank" rel="noopener noreferrer" class="contact-info-item__value contact-info-item__insta"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @artemision_hotelspa</a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contact-form" name="contact" action="https://formspree.io/f/xeevdapb" method="POST">
+                    <div class="contact-form__row">
+                        <div class="contact-form__field">
+                            <label for="cf-name">Full Name</label>
+                            <input type="text" id="cf-name" name="name" placeholder="Your name" required autocomplete="name">
+                        </div>
+                        <div class="contact-form__field">
+                            <label for="cf-email">Email</label>
+                            <input type="email" id="cf-email" name="email" placeholder="your@email.com" required autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="contact-form__field">
+                        <label for="cf-phone">Phone <span class="contact-form__optional">(optional)</span></label>
+                        <input type="tel" id="cf-phone" name="phone" placeholder="+30 ..." autocomplete="tel">
+                    </div>
+                    <div class="contact-form__field">
+                        <label for="cf-message">Message</label>
+                        <textarea id="cf-message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--dark">Send Message</button>
+                </form>
+                <div class="contact-form__success" id="contact-success" style="display:none;">
+                    <p class="contact-form__success-title">Thank you for reaching out.</p>
+                    <p class="contact-form__success-text">We have received your message and will be in touch shortly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="logo_without_back.png" alt="Artermision" class="footer__logo-img">
+                    <p class="footer__tagline">Wellness in Every Stay</p>
+                    <p class="footer__address">Filellinon 5, Loutra Edipsou, 34300, Greece</p>
+                </div>
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <div class="footer__nav-col">
+                        <h4>Experience</h4>
+                        <ul>
+                            <li><a href="#rooms">Rooms &amp; Suites</a></li>
+                            <li><a href="#spa">Spa</a></li>
+                            <li><a href="#pool">Pool</a></li>
+                            <li><a href="#wellness">Wellness</a></li>
+                            <li><a href="#experiences">Retreat</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:info@hotelartemision.gr">info@hotelartemision.gr</a></li>
+                            <li><a href="tel:+302226022251">+30 2226 022251</a></li>
+                            <li>Filellinon 5, Loutra Edipsou, 34300, Greece</li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <h4>Follow</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/artemision_hotelspa/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a></li>
+                            <li><a href="https://www.booking.com/searchresults.en-gb.html?ss=Artemision%2C+Loutra+Edipsou%2C+Central+Greece%2C+Greece&ssne=Sk%C3%A1la+Loutr%C3%B3n&ssne_untouched=Sk%C3%A1la+Loutr%C3%B3n&label=gen173nr-10CAEoggI46AdIM1gEaMABiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKb8bPPBsACAdICJGIzYzFhZTE0LTYxMDYtNGZlNS1iNjRjLTVhZjg5OTJjZDljMtgCAeACAQ&aid=304142&lang=en-gb&sb=1&src_elem=sb&src=index&dest_id=318285&dest_type=hotel&ac_position=0&ac_click_type=b&ac_langcode=xu&ac_suggestion_list_length=4&search_selected=true&search_pageview_id=a1987a4dbed90624&ac_meta=GhBhMTk4N2E0ZGJlZDkwNjI0IAAoATICeHU6CmFydGVtaXNpb24%3D&checkin=2026-08-01&checkout=2026-08-09&group_adults=1&no_rooms=1&group_children=0" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8M12 8v8"/></svg>Booking.com</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Artermision. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         ROOM MODALS
+    ============================================================ -->
+
+    <!-- SUITES MODAL -->
+    <div class="room-modal" id="modal-suites" role="dialog" aria-modal="true" aria-labelledby="modal-suites-title" aria-hidden="true">
+        <div class="room-modal__backdrop"></div>
+        <div class="room-modal__panel">
+            <button class="room-modal__close" aria-label="Close">&times;</button>
+            <div class="room-modal__gallery">
+                <div class="room-modal__slides">
+                    <div class="room-modal__slide active"><img src="Suite_Bed.jpeg" alt="Suite Bed" loading="lazy"></div>
+                    <div class="room-modal__slide"><img src="Suite Living.jpeg" alt="Suite Living Area" loading="lazy"></div>
+                    <div class="room-modal__slide"><img src="suite shower.jpeg" alt="Suite Shower" loading="lazy"></div>
+                    <div class="room-modal__slide"><img src="suite Bathroom.jpeg" alt="Suite Bathroom" loading="lazy"></div>
+                </div>
+                <button class="room-modal__arrow room-modal__arrow--prev" aria-label="Previous photo">&#8592;</button>
+                <button class="room-modal__arrow room-modal__arrow--next" aria-label="Next photo">&#8594;</button>
+                <div class="room-modal__dots"></div>
+            </div>
+            <div class="room-modal__content">
+                <span class="room-modal__label">Premium Accommodation</span>
+                <h2 class="room-modal__title" id="modal-suites-title">Suites</h2>
+                <p class="room-modal__desc">Our suites are the pinnacle of the Artermision experience. Spacious, serene and meticulously designed, each suite offers a private sanctuary of quiet luxury — from the deep-soak bathtub to the private balcony overlooking the landscape. Premium natural materials, bespoke furnishings and curated wellness amenities create a space designed for total restoration.</p>
+                <div class="room-modal__amenities">
+                    <h4 class="room-modal__amenities-title">Suite Amenities</h4>
+                    <ul class="room-modal__amenities-grid">
+                        <li>King-size bed with premium linens</li>
+                        <li>Private balcony or terrace</li>
+                        <li>Deep-soak bathtub</li>
+                        <li>Separate walk-in shower</li>
+                        <li>Luxury wellness amenity kit</li>
+                        <li>Complimentary minibar</li>
+                        <li>Smart TV &amp; entertainment</li>
+                        <li>In-room safe</li>
+                        <li>Air conditioning</li>
+                        <li>Daily housekeeping</li>
+                        <li>Turndown service</li>
+                        <li>High-speed Wi-Fi</li>
+                    </ul>
+                </div>
+                <div class="room-modal__cta">
+                    <a href="#contact" class="btn btn--outline room-modal__reserve">Reserve This Suite</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAMILY ROOMS MODAL -->
+    <div class="room-modal" id="modal-family" role="dialog" aria-modal="true" aria-labelledby="modal-family-title" aria-hidden="true">
+        <div class="room-modal__backdrop"></div>
+        <div class="room-modal__panel">
+            <button class="room-modal__close" aria-label="Close">&times;</button>
+            <div class="room-modal__gallery">
+                <div class="room-modal__slides">
+                    <div class="room-modal__slide room-modal__slide--placeholder active"><span>Family Room — Photo 1</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Family Room — Photo 2</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Family Room — Photo 3</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Family Room — Photo 4</span></div>
+                </div>
+                <button class="room-modal__arrow room-modal__arrow--prev" aria-label="Previous photo">&#8592;</button>
+                <button class="room-modal__arrow room-modal__arrow--next" aria-label="Next photo">&#8594;</button>
+                <div class="room-modal__dots"></div>
+            </div>
+            <div class="room-modal__content">
+                <span class="room-modal__label">Family Accommodation</span>
+                <h2 class="room-modal__title" id="modal-family-title">Family Rooms</h2>
+                <p class="room-modal__desc">Our family rooms are designed to give every member of the family space, comfort and the feeling of a true retreat. Generous in layout, warm in atmosphere and thoughtfully equipped, these rooms balance the needs of parents and children — creating a restorative space for the whole family to arrive, unwind and reconnect.</p>
+                <div class="room-modal__amenities">
+                    <h4 class="room-modal__amenities-title">Room Amenities</h4>
+                    <ul class="room-modal__amenities-grid">
+                        <li>Multiple beds configuration</li>
+                        <li>Spacious open layout</li>
+                        <li>Garden or pool view</li>
+                        <li>Large en-suite bathroom</li>
+                        <li>Walk-in shower</li>
+                        <li>Children's welcome amenities</li>
+                        <li>Smart TV &amp; entertainment</li>
+                        <li>In-room safe</li>
+                        <li>Air conditioning</li>
+                        <li>Daily housekeeping</li>
+                        <li>Interconnecting option available</li>
+                        <li>High-speed Wi-Fi</li>
+                    </ul>
+                </div>
+                <div class="room-modal__cta">
+                    <a href="#contact" class="btn btn--outline room-modal__reserve">Reserve This Room</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOUBLE ROOMS MODAL -->
+    <div class="room-modal" id="modal-double" role="dialog" aria-modal="true" aria-labelledby="modal-double-title" aria-hidden="true">
+        <div class="room-modal__backdrop"></div>
+        <div class="room-modal__panel">
+            <button class="room-modal__close" aria-label="Close">&times;</button>
+            <div class="room-modal__gallery">
+                <div class="room-modal__slides">
+                    <div class="room-modal__slide room-modal__slide--placeholder active"><span>Double Room — Photo 1</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Double Room — Photo 2</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Double Room — Photo 3</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Double Room — Photo 4</span></div>
+                </div>
+                <button class="room-modal__arrow room-modal__arrow--prev" aria-label="Previous photo">&#8592;</button>
+                <button class="room-modal__arrow room-modal__arrow--next" aria-label="Next photo">&#8594;</button>
+                <div class="room-modal__dots"></div>
+            </div>
+            <div class="room-modal__content">
+                <span class="room-modal__label">Classic Accommodation</span>
+                <h2 class="room-modal__title" id="modal-double-title">Double Rooms</h2>
+                <p class="room-modal__desc">Refined, calm and beautifully considered. Our double rooms offer everything needed for a quiet, restorative stay. Soft natural light, premium bedding, elegant materials and a thoughtful layout create a space that feels genuinely restful — not simply functional. Perfect for couples or solo travellers seeking quality and comfort.</p>
+                <div class="room-modal__amenities">
+                    <h4 class="room-modal__amenities-title">Room Amenities</h4>
+                    <ul class="room-modal__amenities-grid">
+                        <li>Double or twin bed option</li>
+                        <li>City or sea view</li>
+                        <li>En-suite bathroom</li>
+                        <li>Walk-in shower</li>
+                        <li>Premium bedding &amp; pillows</li>
+                        <li>Wellness amenity kit</li>
+                        <li>Smart TV &amp; entertainment</li>
+                        <li>In-room safe</li>
+                        <li>Air conditioning</li>
+                        <li>Daily housekeeping</li>
+                        <li>Work desk</li>
+                        <li>High-speed Wi-Fi</li>
+                    </ul>
+                </div>
+                <div class="room-modal__cta">
+                    <a href="#contact" class="btn btn--outline room-modal__reserve">Reserve This Room</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SINGLE ROOMS MODAL -->
+    <div class="room-modal" id="modal-single" role="dialog" aria-modal="true" aria-labelledby="modal-single-title" aria-hidden="true">
+        <div class="room-modal__backdrop"></div>
+        <div class="room-modal__panel">
+            <button class="room-modal__close" aria-label="Close">&times;</button>
+            <div class="room-modal__gallery">
+                <div class="room-modal__slides">
+                    <div class="room-modal__slide room-modal__slide--placeholder active"><span>Single Room — Photo 1</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Single Room — Photo 2</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Single Room — Photo 3</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Single Room — Photo 4</span></div>
+                </div>
+                <button class="room-modal__arrow room-modal__arrow--prev" aria-label="Previous photo">&#8592;</button>
+                <button class="room-modal__arrow room-modal__arrow--next" aria-label="Next photo">&#8594;</button>
+                <div class="room-modal__dots"></div>
+            </div>
+            <div class="room-modal__content">
+                <span class="room-modal__label">Solo Retreat</span>
+                <h2 class="room-modal__title" id="modal-single-title">Single Rooms</h2>
+                <p class="room-modal__desc">For the solo traveller who values quality of experience above all. Our single rooms are intimate, beautifully appointed and designed around the needs of one — with every detail considered, every comfort provided. A private, serene space that makes solo travel feel like a genuine luxury.</p>
+                <div class="room-modal__amenities">
+                    <h4 class="room-modal__amenities-title">Room Amenities</h4>
+                    <ul class="room-modal__amenities-grid">
+                        <li>Single bed with premium linens</li>
+                        <li>Garden or courtyard view</li>
+                        <li>En-suite bathroom</li>
+                        <li>Walk-in shower</li>
+                        <li>Wellness amenity kit</li>
+                        <li>Dedicated work desk</li>
+                        <li>Smart TV &amp; entertainment</li>
+                        <li>In-room safe</li>
+                        <li>Air conditioning</li>
+                        <li>Daily housekeeping</li>
+                        <li>Complimentary water &amp; tea</li>
+                        <li>High-speed Wi-Fi</li>
+                    </ul>
+                </div>
+                <div class="room-modal__cta">
+                    <a href="#contact" class="btn btn--outline room-modal__reserve">Reserve This Room</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRIPLE ROOMS MODAL -->
+    <div class="room-modal" id="modal-triple" role="dialog" aria-modal="true" aria-labelledby="modal-triple-title" aria-hidden="true">
+        <div class="room-modal__backdrop"></div>
+        <div class="room-modal__panel">
+            <button class="room-modal__close" aria-label="Close">&times;</button>
+            <div class="room-modal__gallery">
+                <div class="room-modal__slides">
+                    <div class="room-modal__slide room-modal__slide--placeholder active"><span>Triple Room &mdash; Photo 1</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Triple Room &mdash; Photo 2</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Triple Room &mdash; Photo 3</span></div>
+                    <div class="room-modal__slide room-modal__slide--placeholder"><span>Triple Room &mdash; Photo 4</span></div>
+                </div>
+                <button class="room-modal__arrow room-modal__arrow--prev" aria-label="Previous photo">&#8592;</button>
+                <button class="room-modal__arrow room-modal__arrow--next" aria-label="Next photo">&#8594;</button>
+                <div class="room-modal__dots"></div>
+            </div>
+            <div class="room-modal__content">
+                <span class="room-modal__label">Shared Accommodation</span>
+                <h2 class="room-modal__title" id="modal-triple-title">Triple Rooms</h2>
+                <p class="room-modal__desc">Our triple rooms offer the perfect balance of space, comfort and refined design for small groups or families travelling together. Three beds, a thoughtful layout and the same elevated aesthetic that runs throughout Artermision &mdash; ensuring every guest enjoys quality rest in a genuinely beautiful environment.</p>
+                <div class="room-modal__amenities">
+                    <h4 class="room-modal__amenities-title">Room Amenities</h4>
+                    <ul class="room-modal__amenities-grid">
+                        <li>3 single or mixed beds</li>
+                        <li>Spacious open layout</li>
+                        <li>City or garden view</li>
+                        <li>En-suite bathroom</li>
+                        <li>Walk-in shower</li>
+                        <li>Premium bedding &amp; pillows</li>
+                        <li>Smart TV &amp; entertainment</li>
+                        <li>In-room safe</li>
+                        <li>Air conditioning</li>
+                        <li>Daily housekeeping</li>
+                        <li>Ample wardrobe space</li>
+                        <li>High-speed Wi-Fi</li>
+                    </ul>
+                </div>
+                <div class="room-modal__cta">
+                    <a href="#contact" class="btn btn--outline room-modal__reserve">Reserve This Room</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACCESSIBLE ROOMS MODAL -->
+    <div class="room-modal" id="modal-accessible" role="dialog" aria-modal="true" aria-labelledby="modal-accessible-title" aria-hidden="true">
+        <div class="room-modal__backdrop"></div>
+        <div class="room-modal__panel">
+            <button class="room-modal__close" aria-label="Close">&times;</button>
+            <div class="room-modal__gallery">
+                <div class="room-modal__slides">
+                    <div class="room-modal__slide active"><img src="Accessible.jpeg" alt="Accessible Room" loading="lazy"></div>
+                    <div class="room-modal__slide"><img src="accessible bathroom.jpeg" alt="Accessible Bathroom" loading="lazy"></div>
+                    <div class="room-modal__slide"><img src="accessible mirror.jpeg" alt="Accessible Room Mirror" loading="lazy"></div>
+                </div>
+                <button class="room-modal__arrow room-modal__arrow--prev" aria-label="Previous photo">&#8592;</button>
+                <button class="room-modal__arrow room-modal__arrow--next" aria-label="Next photo">&#8594;</button>
+                <div class="room-modal__dots"></div>
+            </div>
+            <div class="room-modal__content">
+                <span class="room-modal__label">Accessible Accommodation</span>
+                <h2 class="room-modal__title" id="modal-accessible-title">Accessible Rooms</h2>
+                <p class="room-modal__desc">At Artermision, accessibility is not an afterthought &mdash; it is part of the design. Our accessible rooms are fully adapted to meet the needs of guests with mobility requirements, offering the same level of premium comfort, refined aesthetics and restorative atmosphere as every other room in the hotel. Every guest deserves an equally elevated stay.</p>
+                <div class="room-modal__amenities">
+                    <h4 class="room-modal__amenities-title">Room Amenities</h4>
+                    <ul class="room-modal__amenities-grid">
+                        <li>Adjustable bed height</li>
+                        <li>Ground floor location</li>
+                        <li>Wide doorways &amp; hallways</li>
+                        <li>Roll-in wet room shower</li>
+                        <li>Fold-down shower seat</li>
+                        <li>Grab bars throughout</li>
+                        <li>Lowered fixtures &amp; fittings</li>
+                        <li>Visual &amp; auditory alerts</li>
+                        <li>Smart TV &amp; entertainment</li>
+                        <li>Air conditioning</li>
+                        <li>Daily housekeeping</li>
+                        <li>High-speed Wi-Fi</li>
+                    </ul>
+                </div>
+                <div class="room-modal__cta">
+                    <a href="#contact" class="btn btn--outline room-modal__reserve">Reserve This Room</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
