@@ -23,6 +23,10 @@
             </button>
             <a href="#home" class="nav__logo">
                 <img src="logo_without_back.png" alt="Artermision" class="nav__logo-img">
+                <span class="nav__logo-text">
+                    <span class="nav__logo-hotel">Hotel</span>
+                    <span class="nav__logo-name">Artermision</span>
+                </span>
             </a>
             <ul class="nav__links">
                 <li><a href="#rooms" class="nav__link">Rooms &amp; Suites</a></li>
@@ -548,7 +552,7 @@
             </div>
             <div class="footer__bottom">
                 <p>&copy; 2026 Artermision. All rights reserved.</p>
-                <p><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms of Service</a></p>
+                <p><a href="#" data-legal-modal="privacy">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#" data-legal-modal="terms">Terms of Service</a></p>
             </div>
         </div>
     </footer>
@@ -821,5 +825,87 @@
     </div>
 
     <script src="js/main.js"></script>
+
+    <!-- ============================================================
+         LEGAL MODALS
+    ============================================================ -->
+
+    <!-- PRIVACY POLICY -->
+    <div class="legal-modal" id="legal-modal-privacy" role="dialog" aria-modal="true" aria-labelledby="legal-modal-privacy-title" aria-hidden="true">
+        <div class="legal-modal__backdrop"></div>
+        <div class="legal-modal__panel">
+            <button class="legal-modal__close" aria-label="Close">&times;</button>
+            <div class="legal-modal__body">
+                <span class="legal-modal__label">Artermision Hotel &amp; Spa</span>
+                <h2 class="legal-modal__title" id="legal-modal-privacy-title">Privacy Policy</h2>
+                <p class="legal-modal__updated">Last updated: April 2026</p>
+
+                <h3>1. Who We Are</h3>
+                <p>Artermision Hotel &amp; Spa ("we", "us", "our") is located at Filellinon 5, Loutra Edipsou, 34300, Evia, Greece. We are committed to protecting the personal information of our guests and website visitors in accordance with Regulation (EU) 2016/679 (GDPR) and applicable Greek law.</p>
+
+                <h3>2. Information We Collect</h3>
+                <p>We may collect the following personal data: name, email address, phone number, postal address, payment details (processed securely via third-party providers), and stay preferences. We also collect standard website usage data (cookies, IP addresses, browser type) through our analytics tools.</p>
+
+                <h3>3. How We Use Your Data</h3>
+                <p>Your data is used to process reservations, communicate booking confirmations, personalise your stay, respond to enquiries, send newsletters (only with your consent), and meet our legal obligations.</p>
+
+                <h3>4. Data Sharing</h3>
+                <p>We do not sell your personal data. We may share it with booking platforms (e.g. Booking.com), payment processors, and service providers strictly necessary for your reservation. All third parties are bound by appropriate data protection agreements.</p>
+
+                <h3>5. Data Retention</h3>
+                <p>Reservation and guest records are retained for up to 5 years as required by Greek fiscal and hospitality regulations. Marketing data is retained until you withdraw consent.</p>
+
+                <h3>6. Your Rights</h3>
+                <p>Under GDPR you have the right to access, correct, delete, or restrict processing of your personal data. To exercise your rights, please contact us at <a href="mailto:info@artermision.gr">info@artermision.gr</a>.</p>
+
+                <h3>7. Cookies</h3>
+                <p>Our website uses essential cookies for functionality and, with your consent, analytics cookies to improve your experience. You may adjust cookie preferences through your browser settings.</p>
+
+                <h3>8. Contact</h3>
+                <p>For any privacy-related questions, contact our Data Protection Officer at <a href="mailto:info@artermision.gr">info@artermision.gr</a> or by post at the address above.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TERMS OF SERVICE -->
+    <div class="legal-modal" id="legal-modal-terms" role="dialog" aria-modal="true" aria-labelledby="legal-modal-terms-title" aria-hidden="true">
+        <div class="legal-modal__backdrop"></div>
+        <div class="legal-modal__panel">
+            <button class="legal-modal__close" aria-label="Close">&times;</button>
+            <div class="legal-modal__body">
+                <span class="legal-modal__label">Artermision Hotel &amp; Spa</span>
+                <h2 class="legal-modal__title" id="legal-modal-terms-title">Terms of Service</h2>
+                <p class="legal-modal__updated">Last updated: April 2026</p>
+
+                <h3>1. Reservations</h3>
+                <p>All reservations are subject to availability. A booking is confirmed only upon receipt of a written confirmation from Artermision Hotel &amp; Spa or an authorised booking platform. Guests must be 18 years of age or older to make a reservation.</p>
+
+                <h3>2. Check-In &amp; Check-Out</h3>
+                <p>Standard check-in time is 14:00 (2 PM) and check-out is 12:00 (noon). Early check-in and late check-out may be arranged subject to availability and may incur an additional charge.</p>
+
+                <h3>3. Cancellation &amp; Modification Policy</h3>
+                <p>Cancellations made more than 7 days prior to arrival will receive a full refund. Cancellations within 7 days of arrival will be charged one night's accommodation. No-shows will be charged the full reservation amount. Please refer to your booking confirmation for rate-specific terms.</p>
+
+                <h3>4. Payment</h3>
+                <p>A valid credit or debit card is required at check-in. Payment in full is due upon arrival unless otherwise agreed. We accept Visa, Mastercard, and cash in Euro (€).</p>
+
+                <h3>5. Hotel Rules</h3>
+                <p>Guests are expected to respect the peace and comfort of fellow guests. Smoking is not permitted inside any hotel building. Pets are not permitted on the premises. The hotel accepts no liability for loss of personal valuables unless stored in the in-room safe or hotel safety deposit box.</p>
+
+                <h3>6. Spa &amp; Wellness Facilities</h3>
+                <p>Use of spa and wellness facilities is subject to separate booking and health declarations where applicable. Certain treatments may not be suitable for guests with specific medical conditions. Please consult our spa team prior to booking.</p>
+
+                <h3>7. Limitation of Liability</h3>
+                <p>Artermision Hotel &amp; Spa shall not be liable for any indirect, incidental, or consequential damages arising from your stay, except where required by applicable Greek consumer law.</p>
+
+                <h3>8. Governing Law</h3>
+                <p>These terms are governed by the laws of Greece. Any disputes shall be subject to the exclusive jurisdiction of the courts of Chalcis, Evia, Greece.</p>
+
+                <h3>9. Contact</h3>
+                <p>For questions regarding these terms, please contact us at <a href="mailto:info@artermision.gr">info@artermision.gr</a> or call <a href="tel:+302226022251">+30 2226 022251</a>.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

@@ -355,4 +355,51 @@
         });
     }
 
+    // ============================================================
+    // LEGAL MODALS — Privacy Policy & Terms of Service
+    // ============================================================
+    var currentLegalModal = null;
+
+    function openLegalModal(id) {
+        var modal = document.getElementById('legal-modal-' + id);
+        if (!modal) return;
+
+        if (!modal._wired) {
+            modal.querySelector('.legal-modal__close').addEventListener('click', closeLegalModal);
+            modal.querySelector('.legal-modal__backdrop').addEventListener('click', closeLegalModal);
+            modal._wired = true;
+        }
+
+        currentLegalModal = modal;
+        modal.setAttribute('aria-hidden', 'false');
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+
+        setTimeout(function () {
+            var closeBtn = modal.querySelector('.legal-modal__close');
+            if (closeBtn) closeBtn.focus();
+        }, 50);
+    }
+
+    function closeLegalModal() {
+        if (!currentLegalModal) return;
+        currentLegalModal.classList.remove('open');
+        currentLegalModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        currentLegalModal = null;
+    }
+
+    document.querySelectorAll('[data-legal-modal]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            openLegalModal(link.dataset.legalModal);
+        });
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && currentLegalModal) {
+            closeLegalModal();
+        }
+    });
+
 })();
