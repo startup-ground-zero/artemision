@@ -1527,6 +1527,10 @@ a.contact-info-item__value:hover {
     }
     .nav__toggle {
         display: flex;
+        order: 2;
+    }
+    .nav__logo {
+        order: 1;
     }
 
     /* Rooms grid */
