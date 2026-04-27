@@ -1169,6 +1169,11 @@ ul {
     padding: 0.72rem 0;
     border-bottom: 1px solid var(--c-beige);
 }
+#pool .split-section__list li {
+    text-transform: none;
+    letter-spacing: 0.02em;
+    font-size: 0.88rem;
+}
 .split-section__list li:first-child {
     border-top: 1px solid var(--c-beige);
 }
