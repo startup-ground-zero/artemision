@@ -501,7 +501,28 @@ ul {
     z-index: 2;
     text-align: center;
     color: var(--c-white);
-    padding: 0 2rem;
+    padding: 0 var(--pad-x);
+    width: 100%;
+    max-width: var(--max-w);
+    margin: 0 auto;
+}
+
+.hero__hotel-name {
+    display: block;
+    font-family: var(--f-heading);
+    font-weight: 300;
+    font-size: clamp(3.6rem, 9vw, 7.5rem);
+    line-height: 1.04;
+    color: var(--c-white);
+    margin-bottom: 0.6rem;
+}
+.hero__hotel-logo {
+    display: block;
+    height: 84px;
+    width: auto;
+    margin: 0 auto 0.8rem;
+    opacity: 0.85;
+    filter: brightness(0) invert(1);
 }
 
 .hero__location {
@@ -518,7 +539,7 @@ ul {
 .hero__title {
     font-family: var(--f-heading);
     font-weight: 300;
-    font-size: clamp(3.6rem, 9vw, 7.5rem);
+    font-size: clamp(2.4rem, 6vw, 5rem);
     line-height: 1.04;
     margin-bottom: 1.6rem;
     color: var(--c-white);
@@ -923,7 +944,7 @@ ul {
 }
 .spa-modal__image {
     width: 100%;
-    height: 220px;
+    height: 340px;
     object-fit: cover;
     display: block;
 }
@@ -978,7 +999,7 @@ ul {
 
 @media (max-width: 480px) {
     .spa-modal__image {
-        height: 160px;
+        height: 240px;
     }
     .spa-modal__body {
         padding: 1.5rem 1.5rem 1.75rem;
@@ -1539,8 +1560,11 @@ a.contact-info-item__value:hover {
     }
 
     /* Hero */
-    .hero__title {
+    .hero__hotel-name {
         font-size: clamp(3rem, 13vw, 5rem);
+    }
+    .hero__title {
+        font-size: clamp(2rem, 9vw, 3.5rem);
     }
 
     /* Statement */
