@@ -485,6 +485,26 @@ ul {
     background: var(--c-dark);
 }
 
+/* Hero slideshow */
+.hero__slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.hero__slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+.hero__slide.active {
+    opacity: 1;
+}
+
 .hero__overlay {
     position: absolute;
     inset: 0;
@@ -539,7 +559,7 @@ ul {
 .hero__title {
     font-family: var(--f-heading);
     font-weight: 300;
-    font-size: clamp(2.4rem, 6vw, 5rem);
+    font-size: clamp(1.8rem, 4.5vw, 3.8rem);
     line-height: 1.04;
     margin-bottom: 1.6rem;
     color: var(--c-white);
@@ -995,6 +1015,56 @@ ul {
     font-weight: 300;
     line-height: 1.8;
     color: var(--c-stone);
+}
+.spa-modal__desc--note {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--c-taupe);
+}
+
+/* Pricing modal */
+.spa-modal__panel--pricing {
+    max-width: 480px;
+}
+.spa-modal__close--dark {
+    background: rgba(0,0,0,0.15);
+    color: var(--c-dark);
+}
+.spa-modal__close--dark:hover {
+    background: rgba(0,0,0,0.3);
+}
+.spa-list__btn--pricing {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    opacity: 0.75;
+    font-style: italic;
+    letter-spacing: 0.18em;
+}
+.spa-pricing__list {
+    list-style: none;
+    border-top: 1px solid var(--c-cream);
+}
+.spa-pricing__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--c-cream);
+}
+.spa-pricing__name {
+    font-family: var(--f-body);
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--c-dark);
+}
+.spa-pricing__price {
+    font-family: var(--f-heading);
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--c-taupe);
+    white-space: nowrap;
+    margin-left: 1rem;
 }
 
 @media (max-width: 480px) {

@@ -63,15 +63,22 @@
     ============================================================ -->
     <section class="hero" id="home">
         <div class="hero__media">
-            <div class="hero__photo-placeholder" aria-hidden="true"></div>
+            <div class="hero__slides">
+                <img class="hero__slide active" src="Suite_Bed.jpeg" alt="Artermision Suite" loading="eager">
+                <img class="hero__slide" src="rasul_1.jpeg" alt="Rasul" loading="lazy">
+                <img class="hero__slide" src="salt therapy.jpeg" alt="Salt Therapy" loading="lazy">
+                <img class="hero__slide" src="pool5.jpeg" alt="Thermal Pool" loading="lazy">
+                <img class="hero__slide" src="massage & head spa.jpeg" alt="Massage & Head Spa" loading="lazy">
+                <img class="hero__slide" src="hydrotherapy.jpeg" alt="Hydrotherapy" loading="lazy">
+                <img class="hero__slide" src="head spa.jpeg" alt="Head Spa" loading="lazy">
+            </div>
         </div>
         <div class="hero__overlay"></div>
         <div class="hero__content">
-            <img src="logo_without_back.png" alt="" class="hero__hotel-logo" aria-hidden="true">
             <span class="hero__hotel-name">Hotel Artemision</span>
             <span class="hero__location">Aidipsos · Evia · Greece</span>
             <h1 class="hero__title">Wellness in <em>Every Stay</em></h1>
-            <p class="hero__tagline">A premium retreat designed for rest,<br>renewal and elevated living.</p>
+            <p class="hero__tagline">A premium retreat designed for rest, renewal and elevated living.</p>
         </div>
         <div class="hero__scroll">
             <div class="hero__scroll-line"></div>
@@ -188,7 +195,7 @@
                     </div>
                     <div class="suite-card__body">
                         <span class="suite-card__type">Shared Accommodation</span>
-                        <h3 class="suite-card__name">Triple Rooms</h3>
+                        <h3 class="suite-card__name">Triple &amp; Quad Rooms</h3>
                         <p class="suite-card__desc">Generously sized triple rooms designed for small groups or families. Three beds, considered layout and the same refined comfort throughout.</p>
                         <div class="suite-card__features">
                             <span>1 Double Bed + 2 Convertible Armchairs</span>
@@ -272,6 +279,7 @@
                 <li><button class="spa-list__btn" data-spa-modal="headspa">Head Spa</button></li>
                 <li><button class="spa-list__btn" data-spa-modal="presotherapy">Presotherapy</button></li>
                 <li><button class="spa-list__btn" data-spa-modal="facial">Holistic Facial Treatment</button></li>
+                <li><button class="spa-list__btn spa-list__btn--pricing" data-spa-modal="pricing">Pricing</button></li>
             </ul>
         </div>
     </section>
@@ -323,7 +331,7 @@
         <div class="spa-modal__backdrop"></div>
         <div class="spa-modal__panel">
             <button class="spa-modal__close" aria-label="Close">&times;</button>
-            <img class="spa-modal__image" src="salt therapy.jpeg" alt="Salt Therapy" loading="lazy">
+            <img class="spa-modal__image" src="salt therapy.jpeg" alt="Salt Therapy" loading="lazy" style="object-position: center bottom;">
             <div class="spa-modal__body">
                 <span class="spa-modal__label">Artermision Spa</span>
                 <h2 class="spa-modal__title" id="spa-modal-salt-title">Salt Therapy</h2>
@@ -349,7 +357,7 @@
         <div class="spa-modal__backdrop"></div>
         <div class="spa-modal__panel">
             <button class="spa-modal__close" aria-label="Close">&times;</button>
-            <img class="spa-modal__image" src="presotherapy.jpeg" alt="Presotherapy" loading="lazy">
+            <img class="spa-modal__image" src="presotherapy.jpeg" alt="Presotherapy" loading="lazy" style="object-position: center 60%;">
             <div class="spa-modal__body">
                 <span class="spa-modal__label">Artermision Spa</span>
                 <h2 class="spa-modal__title" id="spa-modal-presotherapy-title">Presotherapy</h2>
@@ -358,11 +366,54 @@
         </div>
     </div>
 
+    <!-- PRICING MODAL -->
+    <div class="spa-modal" id="spa-modal-pricing" role="dialog" aria-modal="true" aria-labelledby="spa-modal-pricing-title" aria-hidden="true">
+        <div class="spa-modal__backdrop"></div>
+        <div class="spa-modal__panel spa-modal__panel--pricing">
+            <button class="spa-modal__close spa-modal__close--dark" aria-label="Close">&times;</button>
+            <div class="spa-modal__body">
+                <span class="spa-modal__label">Artermision Spa</span>
+                <h2 class="spa-modal__title" id="spa-modal-pricing-title">Spa Treatments <em>Pricing</em></h2>
+                <p class="spa-modal__desc spa-modal__desc--note">All prices are per session. Please contact us to book your treatment.</p>
+                <ul class="spa-pricing__list">
+                    <li class="spa-pricing__item">
+                        <span class="spa-pricing__name">Therapeutic Massage</span>
+                        <span class="spa-pricing__price">€00</span>
+                    </li>
+                    <li class="spa-pricing__item">
+                        <span class="spa-pricing__name">Hydrotherapy</span>
+                        <span class="spa-pricing__price">€00</span>
+                    </li>
+                    <li class="spa-pricing__item">
+                        <span class="spa-pricing__name">Rasul</span>
+                        <span class="spa-pricing__price">€00</span>
+                    </li>
+                    <li class="spa-pricing__item">
+                        <span class="spa-pricing__name">Salt Therapy</span>
+                        <span class="spa-pricing__price">€00</span>
+                    </li>
+                    <li class="spa-pricing__item">
+                        <span class="spa-pricing__name">Head Spa</span>
+                        <span class="spa-pricing__price">€00</span>
+                    </li>
+                    <li class="spa-pricing__item">
+                        <span class="spa-pricing__name">Presotherapy</span>
+                        <span class="spa-pricing__price">€00</span>
+                    </li>
+                    <li class="spa-pricing__item">
+                        <span class="spa-pricing__name">Holistic Facial Treatment</span>
+                        <span class="spa-pricing__price">€00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="spa-modal" id="spa-modal-facial" role="dialog" aria-modal="true" aria-labelledby="spa-modal-facial-title" aria-hidden="true">
         <div class="spa-modal__backdrop"></div>
         <div class="spa-modal__panel">
             <button class="spa-modal__close" aria-label="Close">&times;</button>
-            <img class="spa-modal__image" src="face therapy_1.jpeg" alt="Holistic Facial Treatment" loading="lazy">
+            <img class="spa-modal__image" src="face therapy_1.jpeg" alt="Holistic Facial Treatment" loading="lazy" style="object-position: center bottom;">
             <div class="spa-modal__body">
                 <span class="spa-modal__label">Artermision Spa</span>
                 <h2 class="spa-modal__title" id="spa-modal-facial-title">Holistic Facial Treatment</h2>
@@ -758,7 +809,7 @@
             </div>
             <div class="room-modal__content">
                 <span class="room-modal__label">Shared Accommodation</span>
-                <h2 class="room-modal__title" id="modal-triple-title">Triple Rooms</h2>
+                <h2 class="room-modal__title" id="modal-triple-title">Triple &amp; Quad Rooms</h2>
                 <p class="room-modal__desc">Our triple rooms offer the perfect balance of space, comfort and refined design for small groups or families travelling together. At 40 sq.m., each room features 1 double bed and 2 additional armchairs that convert to beds — a thoughtful layout and the same elevated aesthetic that runs throughout Artermision, ensuring every guest enjoys quality rest in a genuinely beautiful environment.</p>
                 <div class="room-modal__amenities">
                     <h4 class="room-modal__amenities-title">Room Amenities</h4>

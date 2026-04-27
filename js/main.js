@@ -12,6 +12,19 @@
     'use strict';
 
     // ============================================================
+    // HERO SLIDESHOW — crossfade every 5 seconds
+    // ============================================================
+    var heroSlides = document.querySelectorAll('.hero__slide');
+    if (heroSlides.length > 1) {
+        var heroSlideIndex = 0;
+        setInterval(function () {
+            heroSlides[heroSlideIndex].classList.remove('active');
+            heroSlideIndex = (heroSlideIndex + 1) % heroSlides.length;
+            heroSlides[heroSlideIndex].classList.add('active');
+        }, 5000);
+    }
+
+    // ============================================================
     // NAV SCROLL BEHAVIOUR
     // ============================================================
     var nav = document.getElementById('nav');
